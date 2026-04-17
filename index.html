@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adara Baby | Cuidado Natural para tu Bebé · Hecho en Colombia</title>
+    
+    <meta property="og:title" content="Adara Baby | Cuidado Natural para tu Bebé">
+    <meta property="og:image" content="https://mundoadara.github.io/baby/Images/hero_adara_baby.jpg"> 
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mundoadara.github.io/baby/">
+    <meta property="og:description" content="Cuidado natural para la piel más delicada. Productos para tu bebé formulados sin químicos, sin derivados del petróleo, con el amor de quienes leen las etiquetas." />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* ─── PALETA ADARA BABY ─── */
+        :root {
+            /* Universo Adara (compartidos) */
+            --blanco-calido:  #F4F1EC;
+            --plateado:       #C9CCD1;
+            --dorado:         #C6A75E;
+            --dorado-oscuro:  #9a7c3f;
+
+            /* Adara Baby específicos */
+            --rosa:           #E6C5B8;
+            --rosa-suave:     #f5ebe6;
+            --rosa-oscuro:    #b8806a;
+            --lavanda:        #D8D2E8;
+            --lavanda-suave:  #f0edf8;
+            --lavanda-oscuro: #8a7eaa;
+            --verde-baby:     #AAB89E;
+            --verde-baby-suave: #eaf0e6;
+            --verde-baby-oscuro: #6e8060;
+
+            /* Neutros */
+            --tierra:         #4A3F35;
+            --tierra-suave:   #7a6a5a;
+            --blanco:         #FFFFFF;
+            --arena:          #D9CFC2;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--blanco-calido);
+            color: var(--tierra);
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Cormorant Garamond', serif;
+            line-height: 1.15;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ─── BARRA SUPERIOR ─── */
+        .top-bar {
+            background: linear-gradient(90deg, var(--rosa) 0%, var(--lavanda) 50%, var(--verde-baby) 100%);
+            color: var(--tierra);
+            text-align: center;
+            padding: 9px 16px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+        .top-bar strong { color: var(--tierra); }
+
+        /* ─── HEADER ─── */
+        header {
+            background-color: var(--blanco);
+            text-align: center;
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .logo-icon {
+            width: 30px;
+            height: 30px;
+        }
+        .logo-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 3px;
+            color: var(--tierra);
+            text-transform: uppercase;
+        }
+        .logo-sub {
+            font-size: 0.62rem;
+            letter-spacing: 4px;
+            color: var(--rosa-oscuro);
+            text-transform: uppercase;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 400;
+            margin-top: -2px;
+        }
+
+        /* ─── HERO ─── */
+        .hero {
+            padding: 44px 0 0;
+            text-align: center;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--lavanda-suave);
+            color: var(--lavanda-oscuro);
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            padding: 5px 14px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--tierra);
+            margin-bottom: 16px;
+            padding: 0 10px;
+        }
+        .hero h1 em {
+            font-style: italic;
+            color: var(--rosa-oscuro);
+        }
+        .hero-sub {
+            font-size: 1rem;
+            color: var(--tierra-suave);
+            margin-bottom: 28px;
+            padding: 0 8px;
+            line-height: 1.75;
+        }
+        .hero-image {
+            width: 100%;
+            aspect-ratio: 4/3;
+            border-radius: 24px;
+            background-color: var(--rosa-suave);
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 28px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--tierra-suave);
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Tres promesas */
+        .trio {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            border: 1px solid var(--arena);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        .trio-item {
+            flex: 1;
+            text-align: center;
+            padding: 14px 6px;
+            border-right: 1px solid var(--arena);
+            font-size: 0.75rem;
+            color: var(--tierra-suave);
+            font-weight: 400;
+        }
+        .trio-item:last-child { border-right: none; }
+        .trio-item strong {
+            display: block;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--rosa-oscuro);
+            margin-bottom: 2px;
+            font-style: italic;
+        }
+
+        /* ─── BOTONES ─── */
+        .btn-primary {
+            display: block;
+            width: 100%;
+            background-color: var(--rosa-oscuro);
+            color: var(--blanco);
+            padding: 17px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.97rem;
+            text-align: center;
+            letter-spacing: 0.03em;
+            transition: background-color 0.2s, transform 0.15s;
+            margin-bottom: 10px;
+        }
+        .btn-primary:active { transform: scale(0.98); }
+        .btn-primary:hover { background-color: #9a6050; }
+
+        .btn-gold {
+            display: block;
+            width: 100%;
+            background-color: var(--dorado);
+            color: var(--blanco);
+            padding: 17px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.97rem;
+            text-align: center;
+            transition: background-color 0.2s, transform 0.15s;
+        }
+        .btn-gold:active { transform: scale(0.98); }
+        .btn-gold:hover { background-color: var(--dorado-oscuro); }
+
+        .btn-outline {
+            display: block;
+            width: 100%;
+            background: transparent;
+            color: var(--tierra);
+            border: 1.5px solid var(--arena);
+            padding: 15px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.92rem;
+            text-align: center;
+            transition: border-color 0.2s, background 0.2s;
+        }
+        .btn-outline:hover { border-color: var(--rosa-oscuro); background: var(--rosa-suave); }
+
+        .btn-note {
+            font-size: 0.78rem;
+            color: var(--tierra-suave);
+            text-align: center;
+            margin-top: 8px;
+        }
+
+        /* ─── TRUST STRIP ─── */
+        .trust-strip {
+            display: flex;
+            justify-content: space-around;
+            padding: 18px 0;
+            border-top: 1px solid var(--arena);
+            border-bottom: 1px solid var(--arena);
+            margin: 32px 0 0;
+            gap: 4px;
+        }
+        .trust-item { text-align: center; flex: 1; }
+        .trust-icon { font-size: 1.15rem; margin-bottom: 3px; }
+        .trust-label {
+            font-size: 0.68rem;
+            color: var(--tierra-suave);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            line-height: 1.3;
+        }
+
+        /* ─── HISTORIA ─── */
+        .story {
+            background-color: var(--lavanda);
+            padding: 56px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .story::before {
+            content: '♡';
+            font-size: 14rem;
+            color: rgba(255,255,255,0.15);
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            line-height: 1;
+            pointer-events: none;
+        }
+        .story h2 {
+            font-size: 1.9rem;
+            color: var(--tierra);
+            margin-bottom: 18px;
+            font-weight: 700;
+        }
+        .story p {
+            color: var(--tierra-suave);
+            font-size: 0.95rem;
+            margin-bottom: 16px;
+            line-height: 1.85;
+        }
+        .story-quote {
+            border-left: 3px solid var(--dorado);
+            padding-left: 18px;
+            margin: 24px 0;
+            font-style: italic;
+            color: var(--tierra);
+            font-size: 1.05rem;
+            font-family: 'Cormorant Garamond', serif;
+            line-height: 1.7;
+        }
+        .story-highlight {
+            background: rgba(255,255,255,0.55);
+            border-radius: 14px;
+            padding: 16px 18px;
+            margin-top: 20px;
+            font-size: 0.88rem;
+            color: var(--tierra);
+            line-height: 1.7;
+        }
+        .story-highlight strong { color: var(--tierra); font-weight: 600; }
+
+        /* ─── SECCIÓN LABEL ─── */
+        .section-label {
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--dorado);
+            margin-bottom: 8px;
+        }
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.95rem;
+            font-weight: 700;
+            color: var(--tierra);
+            margin-bottom: 8px;
+            line-height: 1.2;
+        }
+        .section-sub {
+            font-size: 0.9rem;
+            color: var(--tierra-suave);
+            margin-bottom: 32px;
+            line-height: 1.7;
+        }
+
+        /* ─── MÓDULOS DE PRODUCTO ─── */
+        /* Cada producto es un módulo independiente */
+        .products {
+            padding: 60px 0;
+            background: var(--blanco);
+        }
+
+        .product-module {
+            background: var(--blanco);
+            border: 1px solid var(--arena);
+            border-radius: 24px;
+            overflow: hidden;
+            margin-bottom: 24px;
+            transition: box-shadow 0.2s;
+        }
+        .product-module:hover {
+            box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+        }
+
+        /* Color de acento por producto */
+        .product-module.rosa   { border-top: 4px solid var(--rosa-oscuro); }
+        .product-module.lavanda { border-top: 4px solid var(--lavanda-oscuro); }
+        .product-module.verde  { border-top: 4px solid var(--verde-baby-oscuro); }
+
+        .product-image {
+            width: 100%;
+            aspect-ratio: 4/3;
+            background-color: var(--rosa-suave);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--tierra-suave);
+            font-size: 0.85rem;
+            font-style: italic;
+            overflow: hidden;
+        }
+        .product-image.lavanda-bg { background-color: var(--lavanda-suave); }
+        .product-image.verde-bg   { background-color: var(--verde-baby-suave); }
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-body { padding: 22px 20px 24px; }
+
+        .product-tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 3px 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .tag-rosa    { background: var(--rosa-suave);    color: var(--rosa-oscuro); }
+        .tag-lavanda { background: var(--lavanda-suave); color: var(--lavanda-oscuro); }
+        .tag-verde   { background: var(--verde-baby-suave); color: var(--verde-baby-oscuro); }
+
+        .product-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: var(--tierra);
+            margin-bottom: 4px;
+        }
+        .product-type {
+            font-size: 0.82rem;
+            color: var(--tierra-suave);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+        .product-desc {
+            font-size: 0.9rem;
+            color: var(--tierra-suave);
+            line-height: 1.75;
+            margin-bottom: 16px;
+        }
+
+        /* Beneficios del producto */
+        .product-benefits {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        .product-benefits li {
+            font-size: 0.85rem;
+            color: var(--tierra-suave);
+            padding: 5px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            line-height: 1.5;
+        }
+        .benefit-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            margin-top: 6px;
+            min-width: 6px;
+        }
+        .dot-rosa    { background: var(--rosa-oscuro); }
+        .dot-lavanda { background: var(--lavanda-oscuro); }
+        .dot-verde   { background: var(--verde-baby-oscuro); }
+
+        /* Ingredientes clave */
+        .ingredients-strip {
+            background: var(--blanco-calido);
+            border-radius: 10px;
+            padding: 12px 14px;
+            margin-bottom: 20px;
+        }
+        .ingredients-label {
+            font-size: 0.68rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--dorado);
+            margin-bottom: 6px;
+        }
+        .ingredients-list {
+            font-size: 0.8rem;
+            color: var(--tierra-suave);
+            line-height: 1.6;
+        }
+
+        /* Precio */
+        .price-row {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            margin-bottom: 6px;
+        }
+        .price-old {
+            font-size: 0.95rem;
+            color: var(--plateado);
+            text-decoration: line-through;
+        }
+        .price-main {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--tierra);
+        }
+        .price-tag {
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .price-tag-rosa    { background: var(--rosa-suave);    color: var(--rosa-oscuro); }
+        .price-tag-lavanda { background: var(--lavanda-suave); color: var(--lavanda-oscuro); }
+        .price-tag-verde   { background: var(--verde-baby-suave); color: var(--verde-baby-oscuro); }
+        .price-daily {
+            font-size: 0.78rem;
+            color: var(--tierra-suave);
+            margin-bottom: 18px;
+        }
+
+        /* ─── COMBO SECTION ─── */
+        .combo-section {
+            padding: 48px 0;
+            background: var(--lavanda-suave);
+        }
+        .combo-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 480px) {
+            .combo-grid { grid-template-columns: 1fr; }
+        }
+        .combo-card {
+            background: var(--blanco);
+            border: 1.5px solid var(--arena);
+            border-radius: 20px;
+            padding: 22px 16px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        .combo-card.featured { border: 2px solid var(--dorado); }
+        .combo-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--dorado);
+            color: white;
+            font-size: 0.65rem;
+            font-weight: 600;
+            padding: 4px 14px;
+            border-radius: 20px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+        .combo-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--tierra);
+            margin: 8px 0 5px;
+        }
+        .combo-desc {
+            font-size: 0.78rem;
+            color: var(--tierra-suave);
+            line-height: 1.6;
+            margin-bottom: 12px;
+            flex: 1;
+        }
+        .combo-image {
+            width: 100%;
+            aspect-ratio: 4/3;
+            border-radius: 12px;
+            background-color: var(--rosa-suave);
+            margin-bottom: 12px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--tierra-suave);
+            font-size: 0.78rem;
+            font-style: italic;
+        }
+        .combo-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .combo-includes {
+            list-style: none;
+            margin-bottom: 12px;
+        }
+        .combo-includes li {
+            font-size: 0.78rem;
+            color: var(--tierra-suave);
+            padding: 3px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 7px;
+            line-height: 1.4;
+        }
+        .combo-includes li::before {
+            content: '';
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--dorado);
+            min-width: 5px;
+            margin-top: 5px;
+        }
+        .savings-pill {
+            display: inline-block;
+            background: rgba(198,167,94,0.12);
+            color: var(--dorado-oscuro);
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 3px 9px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .combo-price-row {
+            display: flex;
+            align-items: baseline;
+            gap: 7px;
+            margin-bottom: 3px;
+        }
+        .combo-price-old {
+            font-size: 0.82rem;
+            color: var(--plateado);
+            text-decoration: line-through;
+        }
+        .combo-price-main {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.55rem;
+            font-weight: 700;
+            color: var(--tierra);
+        }
+        .combo-price-note {
+            font-size: 0.7rem;
+            color: var(--tierra-suave);
+            margin-bottom: 12px;
+        }
+
+        /* ─── GARANTÍA ─── */
+        .guarantee {
+            background: var(--verde-baby-suave);
+            border: 1px solid var(--verde-baby);
+            border-radius: 14px;
+            padding: 16px;
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+        .guarantee-icon { font-size: 1.5rem; min-width: 30px; }
+        .guarantee-title {
+            font-weight: 500;
+            font-size: 0.88rem;
+            color: var(--verde-baby-oscuro);
+            margin-bottom: 4px;
+        }
+        .guarantee-text {
+            font-size: 0.78rem;
+            color: var(--tierra-suave);
+            line-height: 1.6;
+        }
+
+        /* ─── ESCASEZ ─── */
+        .scarcity-bar {
+            background: var(--tierra);
+            color: var(--blanco-calido);
+            padding: 16px 0;
+            text-align: center;
+        }
+        .scarcity-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .scarcity-sub {
+            font-size: 0.78rem;
+            color: var(--arena);
+        }
+        .scarcity-sub span { color: var(--dorado); font-weight: 600; }
+
+        /* ─── FAQ ─── */
+        .faq {
+            padding: 56px 0;
+            background: var(--blanco);
+        }
+        .faq-item { border-bottom: 1px solid var(--blanco-calido); }
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 18px 0;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.92rem;
+            font-weight: 500;
+            color: var(--tierra);
+            gap: 16px;
+        }
+        .faq-arrow {
+            font-size: 1.1rem;
+            color: var(--rosa-oscuro);
+            transition: transform 0.25s;
+            min-width: 16px;
+        }
+        .faq-item.open .faq-arrow { transform: rotate(45deg); }
+        .faq-answer {
+            font-size: 0.87rem;
+            color: var(--tierra-suave);
+            line-height: 1.8;
+            padding-bottom: 18px;
+            display: none;
+        }
+        .faq-item.open .faq-answer { display: block; }
+
+        /* ─── FOOTER ─── */
+        footer {
+            padding: 44px 0 30px;
+            background: var(--blanco-calido);
+            text-align: center;
+        }
+        .footer-logo-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .footer-logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--tierra);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        .footer-sub {
+            font-size: 0.65rem;
+            letter-spacing: 4px;
+            color: var(--rosa-oscuro);
+            text-transform: uppercase;
+        }
+        .footer-tagline {
+            font-size: 0.8rem;
+            color: var(--tierra-suave);
+            margin-bottom: 22px;
+            font-style: italic;
+        }
+        .footer-logistics {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+        .logistics-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 0.87rem;
+            color: var(--tierra-suave);
+        }
+        .logistics-item strong { color: var(--tierra); }
+        .footer-adara-origin {
+            font-size: 0.78rem;
+            color: var(--tierra-suave);
+            margin-bottom: 14px;
+            font-style: italic;
+            line-height: 1.8;
+            padding: 0 12px;
+        }
+        .footer-copy { font-size: 0.72rem; color: var(--arena); }
+
+        /* ─── WA FLOAT ─── */
+        .wa-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 16px rgba(37,211,102,0.35);
+            z-index: 1000;
+            transition: transform 0.2s;
+        }
+        .wa-float:hover { transform: scale(1.08); }
+
+        /* ─── ANIMACIONES ─── */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(16px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .hero > * { animation: fadeUp 0.5s ease both; }
+        .hero > *:nth-child(1) { animation-delay: 0.05s; }
+        .hero > *:nth-child(2) { animation-delay: 0.15s; }
+        .hero > *:nth-child(3) { animation-delay: 0.22s; }
+        .hero > *:nth-child(4) { animation-delay: 0.30s; }
+        .hero > *:nth-child(5) { animation-delay: 0.38s; }
+        .hero > *:nth-child(6) { animation-delay: 0.45s; }
+
+        /* Scroll reveal suave para módulos */
+        .product-module {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .product-module.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <div class="top-bar">
+        Formulado para la piel más delicada · <strong>Sin químicos, sin derivados del petróleo · Hecho en Colombia</strong>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <svg class="logo-icon" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- gatita simple estilizada -->
+                <ellipse cx="15" cy="17" rx="9" ry="7" fill="#E6C5B8"/>
+                <ellipse cx="15" cy="13" rx="6" ry="5.5" fill="#E6C5B8"/>
+                <!-- orejas -->
+                <polygon points="10,10 8,4 13,9" fill="#E6C5B8"/>
+                <polygon points="20,10 22,4 17,9" fill="#E6C5B8"/>
+                <!-- ojitos -->
+                <ellipse cx="12.5" cy="12.5" rx="1.2" ry="1.2" fill="#4A3F35"/>
+                <ellipse cx="17.5" cy="12.5" rx="1.2" ry="1.2" fill="#4A3F35"/>
+                <!-- naricita -->
+                <ellipse cx="15" cy="14.5" rx="0.8" ry="0.6" fill="#b8806a"/>
+                <!-- moño -->
+                <path d="M13 8 Q15 6 17 8 Q15 9.5 13 8Z" fill="#D8D2E8"/>
+            </svg>
+            <div>
+                <div class="logo-text">Adara</div>
+                <div class="logo-sub">baby</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ══════════════════════════════════ -->
+        <!-- HERO                               -->
+        <!-- ══════════════════════════════════ -->
+        <section class="hero container">
+            <div class="hero-badge">Cuidado natural · Desde el primer día</div>
+            <h1>La piel de tu bebé merece lo que la <em>naturaleza</em> tiene para dar.</h1>
+            <p class="hero-sub">Formulados sin químicos, sin derivados del petróleo, sin fragancias artificiales. Porque leímos las etiquetas — y no nos gustó lo que encontramos.</p>
+
+            <div class="hero-image">
+                <img src="Images/hero_adara_baby.jpg" alt="Línea completa Adara Baby: Burbujas de Vainilla, Mimos de Vainilla y Colita de Algodón">
+            </div>
+
+            <div class="trio">
+                <div class="trio-item"><strong>Limpia</strong>sin agredir</div>
+                <div class="trio-item"><strong>Nutre</strong>en profundidad</div>
+                <div class="trio-item"><strong>Protege</strong>con amor</div>
+            </div>
+
+            <a href="https://wa.me/57TUNUMERO?text=Hola%20Adara%20Baby%20👶%20Quiero%20conocer%20los%20productos%20para%20mi%20bebé.%20¿Cuáles%20tienen%20disponibles%3F" class="btn-primary">
+                VER PRODUCTOS DISPONIBLES
+            </a>
+            <p class="btn-note">📲 Respuesta en minutos · Entrega a domicilio en Cali</p>
+
+            <div class="trust-strip">
+                <div class="trust-item">
+                    <div class="trust-icon">🌿</div>
+                    <div class="trust-label">Sin derivados<br>del petróleo</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🐇</div>
+                    <div class="trust-label">Sin fragancias<br>artificiales</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🍼</div>
+                    <div class="trust-label">Desde el<br>primer día</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🏡</div>
+                    <div class="trust-label">Hecho en<br>Colombia</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════ -->
+        <!-- HISTORIA                           -->
+        <!-- ══════════════════════════════════ -->
+        <section class="story">
+            <div class="container">
+                <h2>Nació de leer una etiqueta.</h2>
+                <p>Cuando llegó Aron David, hicimos lo que hace cualquier papá y mamá: compramos lo que recomendaba el pediatra. Las marcas de siempre. Las que todo el mundo usa.</p>
+                <p>Hasta que un día decidimos leer los ingredientes. Lo que encontramos nos cambió la perspectiva para siempre — y fue el inicio de todo lo que hoy es Adara.</p>
+                <div class="story-quote">
+                    "Si la naturaleza tiene ingredientes tan nobles, ¿por qué aplicarle a nuestro bebé una lista de químicos que ni sabemos pronunciar?"
+                </div>
+                <p>Así comenzamos a formular. Primero para Aron David, con el mismo amor con el que uno cuida lo más preciado. Y de ese primer frasco nació Adara Baby — y luego, toda la familia Adara.</p>
+                <div class="story-highlight">
+                    <strong>Lo que NO encontrarás en Adara Baby:</strong> parabenos, sulfatos agresivos, PEGs, fragancias sintéticas, derivados del petróleo, conservantes artificiales ni colorantes. Solo lo que la naturaleza ya tenía.
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════ -->
+        <!-- MÓDULOS DE PRODUCTO                -->
+        <!-- ══════════════════════════════════ -->
+        <section class="products">
+            <div class="container">
+                <div class="section-label">Nuestros productos</div>
+                <h2 class="section-title">Tres aliados para cada momento del día</h2>
+                <p class="section-sub">Cada producto está pensado para una necesidad específica. Úsalos juntos o por separado — todos comparten la misma filosofía: ingredientes nobles, sin atajos.</p>
+
+                <!-- ─── MÓDULO 1: Burbujas de Vainilla ─── -->
+                <div class="product-module rosa" id="burbujas">
+                    <div class="product-image">
+                        <img src="Images/shampoo.jpg" alt="Burbujas de Vainilla - Shampoo Natural Suave">
+                    </div>
+                    <div class="product-body">
+                        <span class="product-tag tag-rosa">Shampoo · 200ml</span>
+                        <div class="product-name">Burbujas de Vainilla</div>
+                        <div class="product-type">Shampoo Natural Suave</div>
+                        <p class="product-desc">Limpia suavemente el cabello y cuero cabelludo delicado del bebé, sin resecar ni irritar. Con vainilla y manzanilla para un baño que también calma.</p>
+                        <ul class="product-benefits">
+                            <li><span class="benefit-dot dot-rosa"></span>Limpia sin resecar ni irritar el cuero cabelludo</li>
+                            <li><span class="benefit-dot dot-rosa"></span>Fórmula suave apta para uso diario</li>
+                            <li><span class="benefit-dot dot-rosa"></span>Sin sulfatos agresivos ni parabenos</li>
+                            <li><span class="benefit-dot dot-rosa"></span>Proteína de seda para cabello suave y brillante</li>
+                        </ul>
+                        <div class="ingredients-strip">
+                            <div class="ingredients-label">Ingredientes destacados</div>
+                            <div class="ingredients-list">Aceite de coco · Vainilla planifolia · Vitamina E · Extracto de aloe vera · Proteína de seda · Manzanilla</div>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-old">$38.000</span>
+                            <span class="price-main">$30.000</span>
+                            <span class="price-tag price-tag-rosa">Lanzamiento</span>
+                        </div>
+                        <div class="price-daily">≈ $150 por baño · Rinde aprox. 200 usos</div>
+                        <a href="https://wa.me/57TUNUMERO?text=Hola%20Adara%20Baby%20👶%20Quiero%20pedir%3A%201%20Burbujas%20de%20Vainilla%20(Shampoo%20200ml)%20-%20%2430.000.%20Mi%20ciudad%20es%20[ciudad].%20¿Cómo%20pago%3F" class="btn-outline">
+                            PEDIR BURBUJAS DE VAINILLA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ─── MÓDULO 2: Mimos de Vainilla ─── -->
+                <div class="product-module lavanda" id="mimos">
+                    <div class="product-image lavanda-bg">
+                        <img src="Images/crema_corporal.jpg" alt="Mimos de Vainilla - Crema Corporal Nutritiva">
+                    </div>
+                    <div class="product-body">
+                        <span class="product-tag tag-lavanda">Crema Corporal · 200ml</span>
+                        <div class="product-name">Mimos de Vainilla</div>
+                        <div class="product-type">Crema Corporal Nutritiva</div>
+                        <p class="product-desc">Hidratación profunda para la piel del bebé después del baño. Con manteca de cacao y centella asiática para nutrir, suavizar y proteger la barrera cutánea delicada.</p>
+                        <ul class="product-benefits">
+                            <li><span class="benefit-dot dot-lavanda"></span>Hidrata profundamente sin sensación grasa</li>
+                            <li><span class="benefit-dot dot-lavanda"></span>Centella asiática para regenerar y calmar</li>
+                            <li><span class="benefit-dot dot-lavanda"></span>Manteca de cacao para suavidad duradera</li>
+                            <li><span class="benefit-dot dot-lavanda"></span>Absorción rápida · Ideal post-baño</li>
+                        </ul>
+                        <div class="ingredients-strip">
+                            <div class="ingredients-label">Ingredientes destacados</div>
+                            <div class="ingredients-list">Manteca de cacao · Aceite de almendras dulces · Centella asiática · Extracto de pepino · Glicerina · Pantenol · Vitamina E</div>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-old">$38.000</span>
+                            <span class="price-main">$30.000</span>
+                            <span class="price-tag price-tag-lavanda">Lanzamiento</span>
+                        </div>
+                        <div class="price-daily">El ritual de mimo después de cada baño</div>
+                        <a href="https://wa.me/57TUNUMERO?text=Hola%20Adara%20Baby%20👶%20Quiero%20pedir%3A%201%20Mimos%20de%20Vainilla%20(Crema%20Corporal%20200ml)%20-%20%2430.000.%20Mi%20ciudad%20es%20[ciudad].%20¿Cómo%20pago%3F" class="btn-outline" style="border-color: var(--lavanda); color: var(--lavanda-oscuro);">
+                            PEDIR MIMOS DE VAINILLA
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ─── MÓDULO 3: Colita de Algodón ─── -->
+                <div class="product-module verde" id="colita">
+                    <div class="product-image verde-bg">
+                        <img src="Images/colita_de_algodon.jpg" alt="Colita de Algodón - Crema Antipañalitis">
+                    </div>
+                    <div class="product-body">
+                        <span class="product-tag tag-verde">Crema Antipañalitis · 60g</span>
+                        <div class="product-name">Colita de Algodón</div>
+                        <div class="product-type">Protección de Vainilla</div>
+                        <p class="product-desc">Barrera protectora con óxido de zinc que previene y calma la irritación del área del pañal. Nutre y regenera la piel más delicada en cada cambio.</p>
+                        <ul class="product-benefits">
+                            <li><span class="benefit-dot dot-verde"></span>Óxido de zinc — barrera protectora real</li>
+                            <li><span class="benefit-dot dot-verde"></span>Previene y calma la irritación por pañal</li>
+                            <li><span class="benefit-dot dot-verde"></span>Nutre y regenera la piel delicada</li>
+                            <li><span class="benefit-dot dot-verde"></span>Sin fragancias artificiales ni conservantes</li>
+                        </ul>
+                        <div class="ingredients-strip">
+                            <div class="ingredients-label">Ingredientes destacados</div>
+                            <div class="ingredients-list">Óxido de zinc · Aceite de caléndula · Vainilla · Manteca de karité · Cera de abejas natural</div>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-old">$32.000</span>
+                            <span class="price-main">$25.000</span>
+                            <span class="price-tag price-tag-verde">Lanzamiento</span>
+                        </div>
+                        <div class="price-daily">Protección en cada cambio de pañal</div>
+                        <a href="https://wa.me/57TUNUMERO?text=Hola%20Adara%20Baby%20👶%20Quiero%20pedir%3A%201%20Colita%20de%20Algodón%20(Crema%20Antipañalitis%2060g)%20-%20%2425.000.%20Mi%20ciudad%20es%20[ciudad].%20¿Cómo%20pago%3F" class="btn-outline" style="border-color: var(--verde-baby); color: var(--verde-baby-oscuro);">
+                            PEDIR COLITA DE ALGODÓN
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════ -->
+        <!-- COMBOS                             -->
+        <!-- ══════════════════════════════════ -->
+        <section class="combo-section">
+            <div class="container">
+                <div class="section-label" style="text-align:center">Promociones</div>
+                <h2 class="section-title" style="text-align:center; margin-bottom:10px">Más por menos</h2>
+                <p class="section-sub" style="text-align:center; margin-bottom:28px">Elige el combo que mejor se adapte al momento de tu bebé.</p>
+
+                <div class="combo-grid">
+
+                    <!-- COMBO 1: Baño & Mimo -->
+                    <div class="combo-card">
+                        <div class="combo-image">
+                            <img src="images/combo_mimos_burbujas.jpg" alt="Combo Baño y Mimo">
+                        </div>
+                        <div class="combo-name">Baño & Mimo</div>
+                        <div class="combo-desc">Shampoo + Crema Corporal. El dúo esencial para el ritual de baño diario.</div>
+                        <ul class="combo-includes">
+                            <li>Burbujas de Vainilla 200ml</li>
+                            <li>Mimos de Vainilla 200ml</li>
+                        </ul>
+                        <div class="savings-pill">💛 Ahorras $10.000</div>
+                        <div class="combo-price-row">
+                            <span class="combo-price-old">$60.000</span>
+                            <span class="combo-price-main">$50.000</span>
+                        </div>
+                        <div class="combo-price-note">Limpieza y nutrición en sinergia</div>
+                        <a href="https://wa.me/57TUNUMERO?text=Hola%20Adara%20Baby%20👶%20Quiero%20pedir%3A%201%20Combo%20Baño%20%26%20Mimo%20-%20%2450.000.%20Mi%20ciudad%20es%20[ciudad].%20¿Cómo%20pago%3F" class="btn-outline" style="font-size:0.82rem; padding:13px 16px;">
+                            PEDIR ESTE COMBO
+                        </a>
+                    </div>
+
+                    <!-- COMBO 2: Kit Adara Baby completo -->
+                    <div class="combo-card featured">
+                        <div class="combo-badge">✦ Mejor valor</div>
+                        <div class="combo-image" style="background-color: var(--lavanda-suave);">
+                            <img src="Images/trio_adara.jpg" alt="Kit Adara Baby Completo - los 3 productos">
+                        </div>
+                        <div class="combo-name">Kit Adara Baby</div>
+                        <div class="combo-desc">Los 3 productos. Cobertura completa para el cuidado diario de tu bebé.</div>
+                        <ul class="combo-includes">
+                            <li>Burbujas de Vainilla 200ml</li>
+                            <li>Mimos de Vainilla 200ml</li>
+                            <li>Colita de Algodón 60g</li>
+                        </ul>
+                        <div class="savings-pill">💛 Ahorras $10.000</div>
+                        <div class="combo-price-row">
+                            <span class="combo-price-old">$85.000</span>
+                            <span class="combo-price-main">$75.000</span>
+                        </div>
+                        <div class="combo-price-note">El regalo perfecto para un bebé</div>
+                        <a href="https://wa.me/57TUNUMERO?text=Hola%20Adara%20Baby%20👶%20Quiero%20pedir%3A%201%20Kit%20Adara%20Baby%20Completo%20(3%20productos)%20-%20%2475.000.%20Mi%20ciudad%20es%20[ciudad].%20¿Cómo%20pago%3F" class="btn-gold" style="font-size:0.82rem; padding:13px 16px;">
+                            QUIERO EL KIT
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Garantía debajo de los dos combos -->
+                <div class="guarantee">
+                    <div class="guarantee-icon">🛡️</div>
+                    <div>
+                        <div class="guarantee-title">Garantía de satisfacción — 15 días</div>
+                        <div class="guarantee-text">Si no notas la diferencia en la piel de tu bebé en 15 días de uso, te devolvemos tu dinero. Eso es lo seguros que estamos de Adara Baby.</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BARRA ESCASEZ -->
+        <div class="scarcity-bar">
+            <div class="container">
+                <div class="scarcity-title">⏳ Primer lote artesanal Adara Baby</div>
+                <div class="scarcity-sub">Producción manual y por lotes · <span>Unidades limitadas disponibles</span></div>
+            </div>
+        </div>
+
+        <!-- ══════════════════════════════════ -->
+        <!-- FAQ                                -->
+        <!-- ══════════════════════════════════ -->
+        <section class="faq">
+            <div class="container">
+                <div class="section-label">Preguntas frecuentes</div>
+                <h2 class="section-title" style="margin-bottom: 28px">Lo que toda mamá y papá pregunta</h2>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        ¿Desde qué edad se pueden usar los productos?
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-answer">Los productos Adara Baby están formulados para pieles delicadas desde el nacimiento. La ausencia de fragancias artificiales, sulfatos agresivos y conservantes sintéticos los hace aptos para recién nacidos. Si tu bebé tiene alguna condición dermatológica específica, consulta con su pediatra.</div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        ¿Qué tienen de diferente frente a marcas como Johnson & Johnson?
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-answer">Las marcas convencionales de cuidado infantil contienen con frecuencia sulfatos agresivos, fragancias sintéticas, parabenos y en algunos casos derivados del petróleo. Adara Baby usa únicamente ingredientes de origen natural — aceites vegetales, extractos botánicos y activos reconocidos por la piel del bebé. Lee nuestras etiquetas y compáralas. Esa transparencia es nuestra mayor diferencia.</div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        ¿El shampoo pica los ojos?
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-answer">Burbujas de Vainilla está formulado con tensioactivos suaves de origen vegetal que no irritan los ojos. Aun así, como con cualquier producto, evita el contacto directo con los ojos y enjuaga bien.</div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        ¿Tienen INVIMA o registro sanitario?
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-answer">Somos una producción artesanal en nuestro primer lote y estamos en proceso de formalización. Cada producto se elabora con ingredientes de alta calidad, proceso documentado y el mismo cuidado que aplicamos en nuestra propia familia. La transparencia de ingredientes que verás en nuestras etiquetas es nuestra garantía hoy.</div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        ¿La crema antipañalitis mancha la ropa?
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-answer">Colita de Algodón contiene óxido de zinc, que puede dejar residuo blanco en telas oscuras. Recomendamos aplicar una capa fina y dejar absorber antes de colocar el pañal. En la mayoría de casos, lava sin dificultad con el ciclo normal.</div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        ¿Cómo hago el pedido?
+                        <span class="faq-arrow">+</span>
+                    </button>
+                    <div class="faq-answer">Escríbenos por WhatsApp con el botón de esta página. Te respondemos en minutos, confirmamos disponibilidad y coordinamos pago y envío. En Cali hacemos entrega a domicilio. Para el resto del país enviamos a todo Colombia con pago del flete contraentrega.</div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo-wrap">
+                <div class="footer-logo">Adara</div>
+                <div class="footer-sub">Baby</div>
+            </div>
+            <div class="footer-tagline">Cuidado natural consciente · Hecho en Cali, Colombia</div>
+            <div class="footer-logistics">
+                <div class="logistics-item">📍 <strong>Cali:</strong> Entrega inmediata a domicilio</div>
+                <div class="logistics-item">🚚 <strong>Nacional:</strong> Envíos a todo Colombia (flete contraentrega)</div>
+            </div>
+            <div class="footer-adara-origin">
+                Adara Baby nació de Aron David — nuestro hijo, nuestra mayor inspiración.<br>
+                <em>Adara</em> significa <em>noble</em> en hebreo antiguo. También es una estrella brillante.<br>
+                Así como él ilumina nuestra vida, queremos iluminar la tuya.
+            </div>
+            <div class="footer-copy">© 2026 Adara Family · Todos los derechos reservados · mundo.adara</div>
+        </div>
+    </footer>
+
+    <!-- WA FLOTANTE -->
+    <a href="https://wa.me/57TUNUMERO" class="wa-float" target="_blank" aria-label="Contáctanos por WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.025 3.207l-.694 2.547 2.628-.69c.906.571 1.738.935 3.009.935h.001c3.182 0 5.767-2.587 5.768-5.766 0-3.181-2.586-5.766-5.767-5.766zm3.364 8.21c-.144.405-.833.738-1.151.785-.318.046-.621.082-1.808-.392-1.206-.482-1.933-1.685-1.993-1.765-.06-.08-.501-.665-.501-1.27s.321-.9.441-1.021c.12-.12.261-.15.351-.15.089 0 .179.001.259.005.083.004.195-.031.306.241.11.271.381.93.411.991.03.06.05.13.01.21-.04.08-.06.13-.12.201-.06.07-.12.16-.17.21-.06.06-.12.12-.05.24.07.12.31.51.67.83.46.41.85.54 1.01.62.16.08.26.07.35-.04.09-.11.38-.44.48-.59.1-.15.2-.12.33-.07.14.05.88.42 1.03.49.15.07.25.1.29.17.04.07.04.405-.1.811z"/>
+        </svg>
+    </a>
+
+    <script>
+        // FAQ accordion
+        function toggleFaq(btn) {
+            const item = btn.parentElement;
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+            if (!isOpen) item.classList.add('open');
+        }
+
+        // Scroll reveal para módulos de producto
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll('.product-module').forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>
